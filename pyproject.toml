@@ -1,0 +1,25 @@
+[project]
+name = "ai-pr-readiness-checker"
+version = "0.1.0"
+description = "A lightweight CI/CD readiness checker for AI-generated pull requests."
+requires-python = ">=3.10"
+readme = "README.md"
+license = { file = "LICENSE" }
+authors = [
+  { name = "Portfolio Project" }
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+
+[tool.ruff]
+line-length = 88
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP", "SIM"]
+
+[tool.bandit]
+exclude_dirs = ["tests", ".venv", "venv"]
+skips = ["B101"]

@@ -1,0 +1,30 @@
+version: 2.1
+
+jobs:
+  validate:
+    docker:
+      - image: cimg/python:3.12
+    steps:
+      - checkout
+      - run:
+          name: Install dependencies
+          command: |
+            python -m pip install --upgrade pip
+            python -m pip install -r requirements-dev.txt
+      - run:
+          name: Ruff lint
+          command: ruff check .
+      - run:
+          name: Pytest
+          command: pytest
+      - run:
+          name: Bandit security scan
+          command: bandit -r pr_readiness check_pr_readiness.py
+      - run:
+          name: AI PR readiness report
+          command: python check_pr_readiness.py
+
+workflows:
+  validate-ai-pr:
+    jobs:
+      - validate
