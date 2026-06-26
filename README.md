@@ -67,12 +67,11 @@ Recommendation: Merge is reasonable after normal reviewer approval.
 
 <img width="1915" height="903" alt="circleci_passed" src="https://github.com/user-attachments/assets/2e7f6002-d0cd-4297-965c-7dd9b84024f9" />
 
-
-## Resume Bullet Points
-
-- Built a Python CI/CD readiness checker for AI-generated pull requests with
-  risk scoring, merge status classification, and reviewer recommendations.
-- Integrated CircleCI workflow steps for dependency installation, Ruff linting,
-  pytest unit tests, Bandit security scanning, and a custom readiness report.
-- Created a small, testable Python package that models quality signals as
-  weighted findings and converts them into actionable CI output.
+## Project Metrics
+5 automated validation steps
+8 unit tests passed
+0.08-second local test runtime
+0 Bandit security issues
+0/100 readiness risk score
+3 readiness states: Ready, Needs Review, Blocked
+~25-second CircleCI pipeline runtime
