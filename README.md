@@ -65,6 +65,9 @@ Findings:
 Recommendation: Merge is reasonable after normal reviewer approval.
 ```
 
+<img width="1915" height="903" alt="circleci_passed" src="https://github.com/user-attachments/assets/2e7f6002-d0cd-4297-965c-7dd9b84024f9" />
+
+
 ## Resume Bullet Points
 
 - Built a Python CI/CD readiness checker for AI-generated pull requests with
