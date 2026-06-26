@@ -1,7 +1,7 @@
 # AI PR Readiness Checker
 
-A lightweight CI/CD validation tool that checks whether an AI-generated code
-change looks safe to merge. The project is intentionally small: it combines
+A CI/CD validation tool that checks whether an AI-generated code
+change looks safe to merge. It combines
 linting, tests, security scanning, and a readable readiness score that can run
 locally or inside CircleCI.
 
